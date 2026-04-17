@@ -799,3 +799,42 @@ img {
         text-align: center;
     }
 }
+
+/* Footer Accelerated Logo */
+.footer-accelerated {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.footer-accelerated p {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--clr-text-muted);
+    opacity: 0.6;
+}
+
+.footer-forge-logo {
+    height: 75px;
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition);
+    filter: contrast(1.05);
+}
+
+.footer-forge-logo:hover {
+    transform: translateY(-2px);
+    filter: contrast(1.1) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08));
+}
+
+@media (max-width: 768px) {
+    .footer-accelerated {
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+}
